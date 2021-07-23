@@ -1,0 +1,11 @@
+Our company has a number of clients and accounts. To modernize our accounting system, we need an api to manage our clients and their current balances.
+
+Please see the attached database, sample data and structure. 
+There are two tables, accounts and transactions. There is a many-one relationship between accounts and transactions.
+There are DEBIT transactions which increase the balance, and CREDIT transactions which decrease the account balance.
+There is an initial 'DEBIT' transaction which represents the opening transaction for the account, and some accounts have corresponding 'CREDIT' transactions.
+
+Endpoints needed:
+- Retrieve an existing account by id, with corresponding balances.
+- Add a transaction to the ledger, and update the account balance.
+- Retrieve transactions for account
